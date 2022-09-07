@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Color_picker_fav.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Color Picker</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="title">
+            <h1>Color Picker</h1>
+        </div>
+        <div class="board-main">
+            <div class="board">
+                <div class="left-board" id="left-board">
+                    <div class="btnLeft">
+                        <button class="btn" id="Change-btn">Change Color <i
+                                class="fa-sharp fa-solid fa-computer-mouse"></i> </button>
+                    </div>
+
+                </div>
+                <div class="right-board">
+                    <div class="range-left" id="range-left">
+                        Red:<input type="range" id="red" value="255" min="0" max="255">
+                        Green:<input type="range" id="green" value="255" min="0" max="255">
+                        Blue:<input type="range" id="blue" value="255" min="0" max="255">
+
+                    </div>
+                    <div class="range-right" id="range-right">
+                        <div class="rgb" id="RGB">
+                            <h3>Result RGB:</h3>
+                            <div class="flex-rgb" id="flex-rgb">
+                                <input type="text" name="rgb" value="rgb(255,255,255)" id="rgb">
+                                <button class="rgbBtn" id="rgbBtn"><i class="fa-solid fa-clone"></i></button>
+                            </div>
+                        </div>
+                        <div class="hex">
+                            <h3>Result HEX:</h3>
+                            <div class="flex-hex" id="flex-hex">
+                                <input type="text" name="hex" value="#0000" id="hex">
+                                <button class="hexBtn" id="hexBtn"><i class="fa-solid fa-clone icon"></i></button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./colorChange.js"></script>
+</body>
+
+</html>

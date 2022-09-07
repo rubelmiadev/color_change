@@ -1,0 +1,454 @@
+body {
+    background-image: url(/img/bg2.png);
+    background-color: #00D699;
+}
+
+.title {
+    background: rgb(114, 27, 27);
+}
+
+.title h1 {
+    text-align: center;
+    color: white;
+}
+
+.board-main {
+    margin-top: 5px;
+    /* background: rgb(182, 204, 182); */
+}
+
+.board {
+
+    display: flex;
+
+}
+
+.left-board {
+    width: 50%;
+
+    height: 300px;
+    margin: 30px;
+    border-radius: 50px;
+    border: 2px solid red;
+    position: relative;
+
+}
+
+.right-board {
+    width: 50%;
+    height: 300px;
+    margin: 30px;
+    display: flex
+}
+
+.btnLeft {
+    position: absolute;
+    margin-left: 25%;
+    bottom: 0;
+}
+
+.btn {
+
+    width: 260px;
+    height: 40px;
+    background: rgb(141, 235, 243);
+    color: black;
+    border: 2px solid red;
+    border-radius: 22px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.range-left {
+    width: 50%;
+    background: rgb(141, 235, 243);
+
+    margin: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+
+
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 80%;
+    border-radius: 50px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input#red {
+
+    background: linear-gradient(90deg, black, #f00);
+}
+
+input#green {
+
+    background: linear-gradient(90deg, black, green);
+}
+
+input#blue {
+
+    background: linear-gradient(90deg, black, #150087);
+}
+
+
+
+
+.range-right {
+    width: 50%;
+    background: rgb(141, 235, 243);
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+
+.range-left,
+.range-right h1 {
+    text-align: center;
+
+
+}
+
+
+
+/* .rgb {
+  font-size:;
+    
+
+} */
+
+.rgb h3 {
+    color: rgb(4, 2, 2);
+    text-align: center;
+
+
+}
+
+.flex-rgb {
+    position: relative;
+    display: flex;
+    height: 30px;
+
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px
+}
+
+
+.rgb input {
+
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: transparent;
+    width: 80%;
+
+
+
+
+}
+
+
+.rgbBtn {
+
+    border-radius: 10px;
+    background: #5c81dc;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 20%;
+    cursor: pointer;
+
+
+}
+
+
+.rgbBtn:active {
+    background: #809c32;
+
+
+}
+
+.rgbBtn::before {
+    content: "Copied";
+    position: absolute;
+    top: -45px;
+    right: 0px;
+    background: #5c81dc;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    display: none;
+
+}
+
+
+.rgbBtn::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: #5c81dc;
+    transform: rotate(45deg);
+    display: none;
+
+}
+
+.rgbBtn i {
+
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.flex-rgb:active .rgbBtn::before {
+    display: block
+}
+
+.flex-rgb:active .rgbBtn::after {
+    display: block;
+}
+
+
+/*hex code css*/
+.hex h3 {
+    color: rgb(4, 2, 2);
+    text-align: center;
+
+
+}
+
+.flex-hex {
+    position: relative;
+
+    display: flex;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+
+}
+
+.hex input {
+
+
+
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: transparent;
+    width: 80%;
+
+
+
+
+}
+
+.hexBtn {
+
+    border-radius: 10px;
+    background: #5c81dc;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 20%;
+    cursor: pointer;
+
+}
+
+.hexBtn i {
+
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+
+
+}
+
+.hexBtn:active {
+    background: #809c32;
+}
+
+.hexBtn::before {
+    content: "Copied";
+    position: absolute;
+    top: -45px;
+    right: 0px;
+    background: #5c81dc;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    display: none;
+
+}
+
+
+.hexBtn::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: #5c81dc;
+    transform: rotate(45deg);
+    display: none;
+
+}
+
+
+
+.flex-hex:active .hexBtn::before,
+.flex-hex:active .hexBtn::after {
+    display: block;
+
+}
+
+
+
+
+/*hex code css*/
+
+
+/* Responsive css */
+@media screen and (max-width:1130px) {
+
+    .btnLeft {
+        margin-left: 22%;
+    }
+
+
+
+}
+
+@media screen and (max-width:980px) {
+
+    .btnLeft {
+        margin-left: 19%;
+    }
+
+
+
+}
+
+@media screen and (max-width:950px) {
+
+    .btnLeft {
+        margin-left: 25%;
+
+    }
+
+    .btn {
+        width: 185px;
+        height: 40px;
+    }
+   .right-board{
+    margin: 30px 0px 30px 0px ;
+   }
+
+}
+
+@media screen and (max-width:800px) {
+    .btnLeft {
+        margin-left: 21%;
+
+    }
+    .range-left{
+        margin: 10px;
+    }
+    .range-right{
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+
+    .left-board {
+        width: 100%;
+       margin:0;
+    }
+ 
+    .board {
+
+        display:block;
+    
+    }
+    .btn{
+       width: 290px;
+      
+    }
+    .btnLeft{
+       margin-left: 30%;
+    }
+  
+    
+
+    .right-board {
+        width: 100%;
+        margin-left:0px;
+    }
+
+}
+
+@media screen and (max-width:660px) {
+    .btnLeft {
+        margin-left: 25%;
+
+    }
+
+}
+@media screen and (max-width:590px) {
+    .btnLeft {
+        margin-left: 20%;
+
+    }
+
+}
+@media screen and (max-width:520px) {
+    .btnLeft {
+        margin-left: 25%;
+
+    }
+    .btn {
+        width: 185px;
+        height: 40px;
+    }
+
+}
+@media screen and (max-width:390px) {
+    .btnLeft {
+        margin-left: 20%;
+
+    }
+  
+
+}
+
+/* Responsive css */
